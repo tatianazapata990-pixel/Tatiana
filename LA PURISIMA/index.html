@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Purísima Rooftop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="IMG/logo.png" alt="La Purísima Rooftop Logo" class="logo-image">
+        </div>
+        
+        <ul class="nav-links">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#menu">MENÚ</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#galeria">GALERÍA</a></li>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+        </ul>
+        <a href="https://w.app/tatianaz" class="btn-reservar-top">RESERVAR <img src="IMG/whatsapp.png" alt="whatsApp" class="ws-icon-img"></a>
+    </header>
+
+    <main class="hero-section">
+        <div class="hero-background" style="background-image: url(IMG/PAG1.png)">
+            <div class="smoke-effect"></div>
+        </div>
+        <div class="hero-content">
+            <h2 class="sub-title">LA</h2>
+            <h1 class="main-title">PURÍSIMA</h1>
+
+        <div class="divider">
+            <h3 class="slogan"><span>ROOFTOP</span></h3>
+        </div>
+            
+            <p class="description">
+                Gastronomía, cócteles y experiencias<br>inolvidables en Medellín.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="https://w.app/tatianaz" class="btn-primary">RESERVAR AHORA <img src="IMG/whatsapp.png" alt="whatsApp" class="ws-icon-img"></a>
+                <a href="#menu" class="btn-secondary">VER MENÚ <span></span></a>
+            </div>
+        </div>
+
+        <section class="features-bar">
+            <div class="feature-item">
+                <span class="icon"></span>
+                <h4>+2 AÑOS</h4>
+                <p>CREANDO EXPERIENCIAS ÚNICAS</p>
+            </div>
+            <div class="feature-item">
+                <span class="icon"></span>
+                <h4>COCTELERÍA</h4>
+                <p>DE AUTOR</p>
+            </div>
+            <div class="feature-item">
+                <span class="icon"></span>
+                <h4>COCINA</h4>
+                <p>DE INSPIRACIÓN INTERNACIONAL</p>
+            </div>
+            <div class="feature-item">
+                <span class="icon"></span>
+                <h4>EVENTOS</h4>
+                <p>Y CELEBRACIONES ESPECIALES</p>
+            </div>
+        </section>
+    </main>
+
+<!-- PAGINA 2 -->
+
+    <section class="menu-section-2" id="menu">
+        <div class="menu-header">
+            <h4 class="menu-subtitle">Nuestro Menú</h4>
+            <h2 class="menu-title">Sabores que<br> elevan tu experiencia</h2>
+        </div>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="openTab(event, 'experiencias')">Experiencias</button>
+            <button class="tab-btn" onclick="openTab(event, 'al-centro')">Al Centro</button>
+            <button class="tab-btn" onclick="openTab(event, 'cocteles')">Cócteles</button>
+            <button class="tab-btn" onclick="openTab(event, 'bebidas')">Bebidas</button>
+        </div>
+
+        <div class="menu-content-wrapper">
+
+        <div id="experiencias" class="tab-content active">
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="IMG/experiencia1.png" alt="Experiencia" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Sangre de Dragón</h3>
+                            <span class="price">$80.000</span>
+                        </div>
+                        <p>Coctel a base de ron blanco, Jack Daniels, zumo de naranja y limón, syrup de limonaria y flor de jamaica, romero y naranja deshidratado.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/experiencia2.png" alt="Experiencia" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Bala de Oro</h3>
+                            <span class="price">$120.000</span>
+                        </div>
+                        <p>Cóctel a base de tequila blanco Bestia, Jagmermeister, licor de tamarindo y naranja, zumo de limón, syrup simple, soda de jengibre, moras, fresas y escarchado de tajín.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/experiencia3.png" alt="Experiencia" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Vertigo Azul</h3>
+                            <span class="price">$90.000</span>
+                        </div>
+                        <p>Cóctel a base de vodka Orlikoff, tequila blancoBestia, ron blanco , Gin Shipper, zumo de limón, blue curazao, triple sec, hierba buena, uchuva y limón.</p>
+                    </div>
+                </div>
+                
+                <div class="menu-item">
+                    <img src="IMG/experiencia4.png" alt="Experiencia" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Narguile</h3>
+                            <span class="price">$80.000</span>
+                        </div>
+                        <p>Durante 30 a 40 minutos.<br>Recarga $30.000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="al-centro" class="tab-content">
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="IMG/plato1.png" alt="Plato" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Provoleta con Chorizos Calados</h3>
+                            <span class="price">$53.000</span>
+                        </div>
+                        <p>Queso provoleone gratinado con pimentón calado, pesto, reducción de balsámico, trozos de chorizo argentino, tomates cherry caramelizados y albahaca. Acompañado de rodajas de pan tostado con mantequilla de ajo.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="IMG/plato2.png" alt="Plato" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Queso Parrillado con Uchuvas</h3>
+                            <span class="price">$40.000</span>
+                        </div>
+                        <p>Queso paipa con mermelada de tomate cherry, uchuva y hojitas crocantes de hierbabuena.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="IMG/plato3.png" alt="Plato" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Mini Burgers</h3>
+                            <span class="price">$46.000</span>
+                        </div>
+                        <p>3 mini burgers con mayonesa trufada, punta de anca molida, queso cheddar, pepinillos dulces, lechuga cogollo y tomate.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="IMG/plato4.png" alt="Plato" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Duos de Chorizos y Morcillas</h3>
+                            <span class="price">$42.000</span>
+                        </div>
+                        <p>Duos de chorizos y morcillas con salsa de vino tinto dulce y rodajas de pan de ajo.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="IMG/plato5.png" alt="Plato" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Fondue</h3>
+                            <span class="price">$75.000</span>
+                        </div>
+                        <p>Mezcla de quesos gratinados con ajo, romero, orégano, tocineta y reducción balsámica; acompañados de tomates al pesto dulces, manzanas verdes con tajín y limón, chorizos cocteleros bañados con salsa barbacao,palitos salados crocantes y trozos de pan en mantequilla.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="IMG/plato6.png" alt="Plato" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Chili con Carne</h3>
+                            <span class="price">$53.000</span>
+                        </div>
+                        <p>Carne estofada con chiles, terminada al gratín, totopos, pico de gallo, salsa de pimentón, salsa cheddar, mermelada de jalapeño levemente picante y cebollín.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cocteles" class="tab-content">
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="IMG/coctel1.png" alt="Cóctel" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>León de seis patas (4 personas)</h3>
+                            <span class="price">$120.000</span>
+                        </div>
+                        <p>Cóctel a base de vodka, licor de naranja y violetas, zumo de limón, zumo de arándanos, syrup simple, Bitter Aromatic El Boticario y hierbabuena.</p>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <img src="IMG/coctel2.png" alt="Cóctel" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Lunático (4 Personas)</h3>
+                            <span class="price">$110.000</span>
+                        </div>
+                        <p>Cóctel a base de ron dorado, licor de naranja y tamarindo, zumo de limón, syrup de orgeat, syrup de limonada y hojas de limón, Bitter Aromatic El Boticario, piña y hierbabuena.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/coctel3.png" alt="Cóctel" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Estrella de Fuego</h3>
+                            <span class="price">$34.000</span>
+                        </div>
+                        <p>Cóctel a base de Jack Daniels Old 7, ron dorado, syrup de feijoa, zumo de limón. Bitter Aromatic El Boticario, naranja y hierbabuena.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/coctel4.png" alt="Cóctel" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Puro Mai Tai</h3>
+                            <span class="price">$35.000</span>
+                        </div>
+                        <p>Cóctel a base de ron Dorado, ron blanco, licor de naranja, espuma de limón, zumo de limón, syrup de orgeat. Bitter Orange El Boticario, hierbabuena y piña deshidratada.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/coctel5.png" alt="Cóctel" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Capiroska de Mora (Caipirinha)</h3>
+                            <span class="price">$33.000</span>
+                        </div>
+                        <p>Cóctel a base de vodka, moras frescas, limón tahití, azúcar blanco y hierbabuena.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/coctel6.png" alt="Cóctel" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Margarita</h3>
+                            <span class="price">$35.000</span>
+                        </div>
+                        <p>Cóctel clásico a base de tequila reposado, syrup simple, licor de naranja, zumo de limón y sal.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="bebidas" class="tab-content">
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="IMG/bebida1.png" alt="Bebida" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Sandía</h3>
+                            <span class="price">$23.000</span>
+                        </div>
+                        <p>Estracto, syrup de sandía, zumo de limón, sal, hierbabuena, limón, manzana verde y piña.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/bebida2.png" alt="Bebida" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Frutos Rojos</h3>
+                            <span class="price">$25.000</span>
+                        </div>
+                        <p>Estracto, syrup de fresa, syrup de limonaria, syrup de jengibre, vino tinto, zumo de limón, hierbabuena, moras y fresas.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/bebida3.png" alt="Bebida" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Maracuyá y Hierbabuena</h3>
+                            <span class="price">$21.000</span>
+                        </div>
+                        <p>Estracto, syrup de maracuyá, zumo de limón y hierbabuena.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/bebida4.png" alt="Bebida" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Feijoa y Canela</h3>
+                            <span class="price">$20.000</span>
+                        </div>
+                        <p>Estracto, syrup de lychee, zumo de limón, limón y canela.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/bebida5.png" alt="Bebida" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Sangría Rosada</h3>
+                            <span class="price">$130.000</span>
+                        </div>
+                        <p>Sangría de vino rosado, vodka, licor de naranja, ginger BEER MIL 976, zumo de limón, fresa, lychee y syrup de flor de jamaica.<br>Jarra 130 <br>Copa 30</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="IMG/bebida6.png" alt="Bebida" class="menu-item-img">
+                    <div class="menu-item-info">
+                        <div class="menu-item-header">
+                            <h3>Sangría Tinto</h3>
+                            <span class="price">$130.000</span>
+                        </div>
+                        <p>Sangría de vino tinto, tequila reposado, licor de naranja, ginger BEER MIL 976, zumo de limón, manzana verde, fresa, syrup de mora y papaya.<br>Jarra 130 <br>Copa 30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function openTab(evt, tabName) {
+    var tabContent = document.getElementsByClassName("tab-content");
+    for (var i = 0; i < tabContent.length; i++) {
+        tabContent[i].classList.remove("active");
+    }
+
+    var tabBtns = document.getElementsByClassName("tab-btn");
+    for (var i = 0; i < tabBtns.length; i++) {
+        tabBtns[i].classList.remove("active");
+    }
+
+    document.getElementById(tabName).classList.add("active");
+    evt.currentTarget.classList.add("active");
+}
+</script>
+
+<!-- PAGINA 3 -->
+ <div class="seccion-servicios" id="servicios">
+    <section class="services-section">
+
+        <div class="services-header">
+            <span class="subtitle">N U E S T R O S</span>
+            <h2 class="main-title">SERVICIOS</h2>
+            <div class="gold-divider">
+                <span class="diamond"></span>
+            </div>
+            <p class="header-description">
+                Creamos experiencias inolvidables con planes y servicios diseñados para hacer de tu evento algo mágico.
+            </p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card animate-fade-up" style="animation-delay: 0.1s;">
+                <div class="card-icon-wrapper">
+                    <img src="IMG/cumpleaños.png" alt="Cumpleaños Clásico" class="card-icon">
+                </div>
+                <h3>CUMPLEAÑOS<br>CLÁSICO</h3>
+                <span class="includes-label">Incluye</span>
+                <ul class="services-list">
+                    <li>Decoración con globos</li>
+                    <li>Accesorios africanos para fotografía</li>
+                    <li>Ritual al toran (África-India)</li>
+                    <li>Cóctel tributo a la purisima</li>
+                    <li>Festejo por parte de los servidores</li>
+                    <li>Milhoja con crema, fresas y arequipe</li>
+                    <li>Pila volcánica</li>
+                </ul>
+                <div class="price-box">$60.000</div>
+            </div>
+
+            <div class="service-card animate-fade-up" style="animation-delay: 0.2s;">
+                <div class="card-icon-wrapper">
+                    <img src="IMG/premium.png" alt="Cumpleaños Premium" class="card-icon">
+                </div>
+                <h3>CUMPLEAÑOS<br>PREMIUM</h3>
+                <span class="includes-label">Incluye</span>
+                <ul class="services-list">
+                    <li>Decoración con globos</li>
+                    <li>Accesorios africanos para fotografía</li>
+                    <li>Ritual al toran (África-India)</li>
+                    <li>Cóctel tributo a la purisima</li>
+                    <li>Festejo por parte de los servidores</li>
+                    <li>Milhoja con crema, fresas y arequipe</li>
+                    <li>Pila volcánica</li>
+                    <li>Caja regalo</li>
+                </ul>
+                <div class="price-box">$110.000</div>
+            </div>
+
+            <div class="service-card animate-fade-up" style="animation-delay: 0.3s;">
+                <div class="card-icon-wrapper">
+                    <img src="IMG/aniversario.png" alt="Aniversario" class="card-icon">
+                </div>
+                <h3>ANIVERSARIO</h3>
+                <span class="includes-label">Incluye</span>
+                <ul class="services-list">
+                    <li>Decoración con velas</li>
+                    <li>2 copas de sangría</li>
+                    <li>Ritual al toran (África-India)</li>
+                    <li>Milhoja con crema, fresas y arequipe</li>
+                </ul>
+                <div class="price-box">$60.000</div>
+            </div>
+
+            <div class="service-card animate-fade-up" style="animation-delay: 0.4s;">
+                <div class="card-icon-wrapper">
+                    <img src="IMG/grados.png" alt="Grados" class="card-icon">
+                </div>
+                <h3>GRADOS</h3>
+                <span class="includes-label">Incluye</span>
+                <ul class="services-list">
+                    <li>Centro de mesa decorado</li>
+                    <li>Copas de sangría</li>
+                    <li>Milhoja con crema, fresas y arequipe</li>
+                    <li>Pila volcánica</li>
+                </ul>
+                <div class="price-box">$60.000</div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="bloque-bajo" style="animation-delay: 0.5s;">
+        
+        <div class="item-bloque-bajo">
+            <img src="IMG/cocteles.png" alt="Cócteles" class="feature-icon">
+            <div class="feature-text">
+                <h4>CÓCTELES EXCLUSIVOS</h4>
+                <p>Bebidas únicas creadas por nuestros mixólogos.</p>
+            </div>
+        </div>
+
+        <div class="item-bloque-bajo">
+            <img src="IMG/ambiente.png" alt="Ambiente" class="feature-icon">
+            <div class="feature-text">
+                <h4>AMBIENTE ROOFTOP</h4>
+                <p>Vive la magia de Medellín desde las alturas.</p>
+            </div>
+        </div>
+
+        <div class="item-bloque-bajo">
+            <img src="IMG/fotos.png" alt="Experiencias" class="feature-icon">
+            <div class="feature-text">
+                <h4>EXPERIENCIAS ÚNICAS</h4>
+                <p>Detalles que hacen de tu evento algo inolvidable.</p>
+            </div>
+        </div>
+
+        <div class="item-bloque-bajo">
+            <img src="IMG/atencion.png" alt="Atención" class="feature-icon">
+            <div class="feature-text">
+                <h4>ATENCIÓN PERSONALIZADA</h4>
+                <p>Nuestro equipo está listo para hacer tu celebración especial.</p>
+            </div>
+        </div>
+    </div>
+    <!-- PAGINA 3 -->
+     <div class="seccion-galeria-completa" id="galeria">
+        <section class="gallery-section">
+        
+        <div class="gallery-left">
+            <img src="IMG/logo.png" alt="La Purísima" class="gallery-logo">
+            
+            <div class="gallery-title-wrapper">
+                <span class="gallery-subtitle">NUESTRA</span>
+                <h2 class="gallery-main-title">GALERÍA</h2>
+                <div class="gold-line-fade"></div> </div>
+
+            <p class="gallery-description">
+                Descubre la esencia de <span class="highlight-gold">La Purísima</span><br>a través de momentos, sabores y experiencias que te harán volver.
+            </p>
+
+            <a href="#" target="_blank" class="btn-reserva-experiencia">
+                RESERVA TU EXPERIENCIA
+            </a>
+        </div>
+
+        <div class="gallery-center">
+            <div class="phone-mockup-container">
+                <div class="neon-green-glow"></div> <div class="phone-frame">
+                    <video src="IMG/Video.mp4" autoplay loop muted playsinline class="phone-video"></video>
+                    
+                    <div class="story-header">
+                        <img src="IMG/logo.png" class="story-avatar">
+                        <div class="story-user-info">
+                            <span>lapurisima.mde</span>
+                            <span class="story-time">12h</span>
+                        </div>
+                    </div>
+                    <div class="story-footer-mockup">
+                        <div class="input-mock">Enviar mensaje</div>
+                        <div class="story-icons">
+                            <img src="IMG/icono1.png" alt="Icono 1" class="icon-img">
+                            <img src="IMG/icono2.png" alt="Icono 2" class="icon-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gallery-right-grid">
+            <div class="grid-item"><img src="IMG/foto1.jpeg" alt="Experiencia La Purísima"></div>
+            <div class="grid-item"><img src="IMG/foto2.jpeg" alt="Experiencia La Purísima"></div>
+            <div class="grid-item"><img src="IMG/foto3.jpeg" alt="Experiencia La Purísima"></div>
+            <div class="grid-item"><img src="IMG/foto4.jpeg" alt="Experiencia La Purísima"></div>
+            <div class="grid-item"><img src="IMG/foto5.jpeg" alt="Experiencia La Purísima"></div>
+            <div class="grid-item"><img src="IMG/foto6.jpeg" alt="Experiencia La Purísima"></div>
+            <div class="grid-item"><img src="IMG/foto7.jpeg" alt="Experiencia La Purísima"></div>
+            <div class="grid-item"><img src="IMG/foto8.jpeg" alt="Experiencia La Purísima"></div>
+            <div class="grid-item"><img src="IMG/foto9.jpeg" alt="Experiencia La Purísima"></div>
+        </div>
+
+    </section>
+</div>
+
+    
+</body>
+</html>
