@@ -489,9 +489,7 @@ function openTab(evt, tabName) {
                 Descubre la esencia de <span class="highlight-gold">La Purísima</span><br>a través de momentos, sabores y experiencias que te harán volver.
             </p>
 
-            <a href="#" target="_blank" class="btn-reserva-experiencia">
-                RESERVA TU EXPERIENCIA
-            </a>
+            <a href="javascript:void(0);" id="btn-galeria-reserva" class="btn-reserva-experiencia">RESERVA TU EXPERIENCIA</a>
         </div>
 
         <div class="gallery-center">
@@ -751,17 +749,30 @@ function openTab(evt, tabName) {
 
         </div>
     </footer>
-    
+
 <script>
-document.getElementById("abrirReserva").addEventListener("click", function(e) {
-    e.preventDefault();
-    document.getElementById("modalReserva").classList.add("active");});
-document.getElementById("cerrarReserva").addEventListener("click", function() {
-    document.getElementById("modalReserva").classList.remove("active");});
+document.getElementById("abrirReserva").addEventListener("click", function(e) {e.preventDefault();
+document.getElementById("modalReserva").classList.add("active");});
+document.getElementById("cerrarReserva").addEventListener("click", function() {document.getElementById("modalReserva").classList.remove("active");});
 
 abrir.addEventListener("click", () => {modal.classList.add("active"); document.body.style.overflow = "hidden";});
 cerrar.addEventListener("click", () => {modal.classList.remove("active"); document.body.style.overflow = "auto";});
+</script>
 
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const miBotonGaleria = document.getElementById('btn-galeria-reserva');
+    const botonOriginalModal = document.getElementById('abrirReserva');
+
+    if (miBotonGaleria && botonOriginalModal) 
+    {miBotonGaleria.addEventListener('click', (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        botonOriginalModal.click();});
+    } 
+    else {
+      console.log("No se encontró alguno de los botones en el HTML");}
+    });
 </script>
 
 </body>
