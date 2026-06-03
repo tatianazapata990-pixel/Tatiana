@@ -656,10 +656,6 @@ function openTab(evt, tabName) {
         <button class="close-modal" id="cerrarReserva">
             ✕
         </button>
-
-
-
-
     <main class="reservation-page">
         <section class="reservation-hero" id="reservar">
             <div class="reservation-container">
@@ -755,24 +751,18 @@ function openTab(evt, tabName) {
 
         </div>
     </footer>
+    
 <script>
 document.getElementById("abrirReserva").addEventListener("click", function(e) {
     e.preventDefault();
-    document.getElementById("modalReserva").classList.add("active");
-});
-
+    document.getElementById("modalReserva").classList.add("active");});
 document.getElementById("cerrarReserva").addEventListener("click", function() {
-    document.getElementById("modalReserva").classList.remove("active");
-});
+    document.getElementById("modalReserva").classList.remove("active");});
 
 abrir.addEventListener("click", () => {modal.classList.add("active"); document.body.style.overflow = "hidden";});
-
 cerrar.addEventListener("click", () => {modal.classList.remove("active"); document.body.style.overflow = "auto";});
 
 </script>
 
-
-
-    
 </body>
 </html>

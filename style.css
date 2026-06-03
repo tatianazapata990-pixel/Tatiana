@@ -24,8 +24,6 @@ body {
     --dark-green: #0b2516;
     --dark-bg: #0a0a0a;
 }
-
-/*--BARRA DE NAVEGACION--*/
 .header {
     position: absolute;
     top: 0;
@@ -297,7 +295,6 @@ body {
     box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
 }
 
-/*BARRA INFERIOR*/
 .features-bar {
     position: absolute;
     bottom: 40px;
@@ -339,7 +336,6 @@ body {
     letter-spacing: 1px;
 }
 
-/*ANIMACIONES*/
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -374,117 +370,138 @@ body {
     }
 }
 
-@media screen and (max-width:768px){
-    .header{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-        padding:15px 10px;
-        gap:10px;
-    }
-
-    .logo-image{
-        width:140px;
-        height:auto;
-    }
-
-    .nav-links{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-        padding:0;
-        margin:0;
-    }
-
-    .nav-links li{
-        list-style:none;
-    }
-
-    .nav-links a{
-        font-size:12px;
-    }
-
-    .hero-section{
-        min-height:auto;
-        padding-top:20px;
-    }
-
-    .hero-content{
+@media screen and (max-width: 768px) {
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 4% 15px 4%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        gap: 16px;
+        background: linear-gradient(to bottom, rgba(0,0,0,0.9) 40%, rgba(0, 0, 0, 0));
+        z-index: 100;
+    }
+    .logo-image {
+        width: 160px; 
+        height: auto;
+        max-height: 50px;
         margin: 0 auto;
-        text-align:center;
-        padding:0 15px;
+        display: block;
     }
-
-    .sub-title{
-        transform: translate(0);
-        text-align: center;
-        width:100%;
-        font-size:2rem;
-    }
-
-    .main-title{
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
         width: 100%;
+        padding: 8px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links li a {
+        font-size: 0.65rem;
+        letter-spacing: 1px;
+        padding-bottom: 2px;
+    }
+    .btn-reservar-top {
+        display: inline-flex;
+        padding: 8px 16px;
+        font-size: 0.7rem;
+        margin: 0 auto;
+    }
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding: 240px 5% 40px 5%; 
+        align-items: center;
+        justify-content: flex-start;
         text-align: center;
-        font-size:3.2rem;
+    }
+    .hero-content {
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sub-title {
+        font-size: 1.1rem;
+        letter-spacing: 4px;
+        transform: none; 
+        margin-bottom: 5px;
+        text-align: center;
+    }
+    .main-title {
+        font-size: 2.3rem; 
+        letter-spacing: 2px;
+        line-height: 1.2;
     }
 
-    .slogan{
-        font-size:1rem;
-        letter-spacing:4px;
+    .slogan {
+        font-size: 0.8rem;
+        letter-spacing: 6px;
+        white-space: normal;
+        padding: 0;
+        margin-top: 8px;
     }
 
-    .description{
-        font-size:1rem;
-        line-height:1.5;
-        margin:20px auto;
+    .divider {
+        max-width: 60%;
+        margin: 12px auto;
     }
 
-
-    .cta-buttons{
-        display:flex;
-        flex-direction:column;
-        gap:12px;
-        align-items:center;
-        margin-top:25px;
+    .description {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        max-width: 90%;
+        margin: 15px auto 25px auto;
+    }
+    .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+        padding: 0 15px;
     }
 
-    .btn-primary,
-    .btn-secondary{
-        width:90%;
-        max-width:300px;
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        padding: 13px 20px;
+        font-size: 0.8rem;
+        box-sizing: border-box;
     }
 
-    .features-bar{
-        display:flex;
-        flex-direction:column;
-        gap:20px;
-        margin-top:30px;
-        text-align:center;
+    .features-bar {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        flex-direction: column;
+        gap: 15px;
+        background: rgba(5, 5, 5, 0.4);
+        padding: 20px 10px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(3px);
     }
 
-    .feature-item{
-        border:none;
-        padding:0;
+    .feature-item {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        padding-bottom: 12px;
     }
 
-    .feature-item h4{
-        font-size:1.3rem;
-        margin-bottom:5px;
+    .feature-item:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
     }
-
-    .feature-item p{
-        font-size:0.8rem;
-    }
-
 }
-
 /*PAGINA 2*/
-/*ESTILOS DE LA SECCIÓN MENÚ*/
 .menu-section-2 {
     position: relative;
     clear: both;
@@ -821,8 +838,6 @@ body {
     text-align: left;
     list-style-type: "- ";
 }
-
-/* Caja de Precio */
 .price-box {
     border: 1px solid #d4af37;
     padding: 10px 25px;
@@ -841,7 +856,6 @@ body {
     background: #d4af37;
     color: #000000;
 }
-/*BARRA INFERIOR DE CARACTERÍSTICAS*/
 .bloque-bajo {
     display: flex;
     justify-content: space-between;
@@ -893,9 +907,6 @@ body {
     font-weight: 300;
     line-height: 1.3;
 }
-
-/*ANIMACIONES*/
-
 .animate-fade-up {
     opacity: 0;
     transform: translateY(30px);
@@ -960,8 +971,6 @@ body {
     padding: 0 20px;
     box-sizing: border-box;
 }
-
-/*IZQUIERDA: TEXTOS*/
 .gallery-left {
     display: flex;
     flex-direction: column;
@@ -1040,7 +1049,7 @@ body {
     transform: translateY(-2px);
 }
 
-/*CELULAR CON BRILLO NEÓN*/
+/*CELULAR BRILLO NEÓN*/
 .gallery-center {
     display: flex;
     justify-content: center;
@@ -1160,7 +1169,6 @@ body {
     transform: scale(1.2);
 }
 
-/*COLUMNA DERECHA:FOTOS*/
 .gallery-right-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -1325,13 +1333,11 @@ body {
         border-radius: 12px;
         box-sizing: border-box;
     }
-
     .nosotros-title{
         font-size: 52px;
         line-height: 0.95;
         text-align: center;
     }
-
     .nosotros-text{
         font-size: 16px;
         line-height: 1.8;
@@ -1701,7 +1707,6 @@ body {
         transform:scale(1);
     }
 }
-/*DISEÑO PAGINA*/
 * {
     margin: 0;
     padding: 0;
